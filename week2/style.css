@@ -1,0 +1,31 @@
+body {
+margin:0;
+background-color: lavender
+}
+h1 {
+background-color: whitesmoke;
+color: black;
+/*the margin surrounds the padding(The padding is the inside box.)*/
+padding: 10px;
+margin: 20px;
+border: 2px solid white;
+border-radius: 15px ;
+}
+#highlight {
+background-color:yellow;
+display: inline-block;
+}
+.smaller {
+ font-size: 1.3em /* em= echo mark .= class /=id*/ 
+ max-width: 700px ;  
+ margin: 0 auto;
+}
+/* and ID wil override a class and a regular tag*/
+#h2orange {
+    background-color: orange;
+}
+.h2purple {
+    background-color: rgb(178, 74, 178);
+}
+
+/* 00= no light FF= all the light ff= red  the closer ists is to 00 the the less light there is */
