@@ -1,0 +1,116 @@
+body{
+    background-color: whitesmoke;
+    
+}
+header{
+    background-color: #FCC000;
+    border-radius: 25px;
+    
+}
+#content{
+    max-width: 5600px;
+    margin: 0 auto;
+}
+img{
+     border-radius: 25px;
+    
+}
+#hero-img{
+    width: 100%;
+}
+.logo{
+    width:80px;
+}
+nav a{
+   text-align: center;
+   text-decoration: none;
+   border: 3px solid #186AD0;
+   border-radius: 25px;
+   color: #186AD0;
+   background-color: #FC8B0C ;
+
+}
+nav a:hover{
+    background-color: #186AD0;
+    color: white;
+}
+#hero-msg h1{
+   text-align: center;
+
+}
+#hero-msg h4{
+   text-align: center;
+}
+.button-box{
+   text-align: center;
+}
+main section{
+    text-align: center;
+}
+#background{
+    height: 725px;
+
+}
+.icon{
+    width: 80px;
+}
+.book{
+    text-decoration: none;
+    background-color: #FC8B0C;
+    color: #186AD0;
+    border: 4px solid #186AD0;
+    border-radius: 15px;
+}
+.book:hover{
+    background-color: #186AD0;
+    color: whitesmoke;
+
+}
+.join{
+    text-decoration: none;
+    color: #396E94; 
+    border: 3px solid #FC8B0C;
+    border-radius: 100%;
+    background-color: #FCC000;
+}
+.join:hover{
+    background-color: #186AD0;
+    color: whitesmoke;
+}
+#background{
+    background-color: #396E94;
+    border-radius: 25px;
+    border: 5px solid #FC8B0C;
+}
+.msg{
+    background-color: #396E94;
+    border-radius:25px ;
+    border: 5px solid #FC8B0C;
+    color: whitesmoke;
+}
+.msg h2{
+    color: whitesmoke;
+}
+.msg p{
+    color: white;
+}
+footer{
+    background-color: #396E94;
+    border-radius: 25px;
+    border: 5px solid #FC8B0C;
+    color: whitesmoke
+}
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+footer a:hover{
+    color: whitesmoke;
+
+}
+.home-title{
+    color: whitesmoke;
+}
+h4{
+    color: whitesmoke;
+}

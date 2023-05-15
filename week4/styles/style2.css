@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+:root{
+    --heading-font: "Robboto";
+    --nav-hover-background-color: black;
+
+}
+body{
+
+    text-align: center;
+    background-color:  rgb(246, 169, 207);
+    margin-left: 35%;
+    margin-right: 35%;
+    font-family: "roboto";
+
+    
+    }
+header{
+    color: white;
+    max-width: 600px;
+   
+ 
+}
+.sub_heading{
+    font-family: "Times New Roman";
+}
+h1{color:white;
+    font-size: 32pt;
+   
+}
+h1:hover{
+    color: black;
+}
+img{ 
+    max-width: 40%;
+    max-height: 40%;
+   }
+ol{
+    text-align: left;
+    line-height: 30px; }
+#quote{
+    text-align: center, justify;
+    text-indent: 10px;
+    max-width:600px ;
+    font-family:"Times New Roman" ;
+    font-size: 31pt;
+    color:white
+}
+footer{
+    font-size: 15pt ;
+    font-family: "Times New Roman";
+}
