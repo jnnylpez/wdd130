@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Permanent+Marker&family=Rock+Salt&display=swap');
 body{
     background-color: whitesmoke;
-    
+    margin: 0;
+    padding: 0; 
+}
+h2{
+    margin: 0;
+   
 }
 header{
     background-color: #FCC000;
     border-radius: 25px;
+    
     
 }
 #content{
@@ -12,7 +19,7 @@ header{
     margin: 0 auto;
 }
 img{
-     border-radius: 25px;
+    border-radius: 25px;
     
 }
 #hero-img{
@@ -20,6 +27,10 @@ img{
 }
 .logo{
     width:80px;
+    padding-bottom: 35px;
+}
+#logo_link{
+    padding-top: 5px;
 }
 nav a{
    text-align: center;
@@ -27,25 +38,35 @@ nav a{
    border: 3px solid #186AD0;
    border-radius: 25px;
    color: #186AD0;
+   font-family: "Lato", Helvetica, sans-serif;
    background-color: #FC8B0C ;
-
+   padding: 35px;
 }
 nav a:hover{
     background-color: #186AD0;
     color: white;
+    font-family: "Lato", Helvetica, sans-serif;
 }
 #hero-msg h1{
    text-align: center;
+   font-family: "Permanent Marker","Rock Salt";
 
 }
 #hero-msg h4{
    text-align: center;
+   font-family: "Permanent Marker","Rock Salt";
 }
 .button-box{
    text-align: center;
 }
 main section{
     text-align: center;
+    color: black;
+    font-family: "Lato", Helvetica, sans-serif;
+
+}
+main section img{
+    box-sizing: border-box;
 }
 #background{
     height: 725px;
@@ -53,13 +74,27 @@ main section{
 }
 .icon{
     width: 80px;
+    padding-top: 10px;
+}
+.book, .join{
+    padding: 15px 30px;
+    margin-top: 50px;
 }
 .book{
     text-decoration: none;
     background-color: #FC8B0C;
+    font-size: 18px;
     color: #186AD0;
-    border: 4px solid #186AD0;
+    font-family: "Lato", Helvetica, sans-serif;
+    border: 5px solid #186AD0;
     border-radius: 15px;
+
+}
+.card-img{
+    border: 10px solid #FC8B0C;
+}
+.rivers-card, .camping-card, .rapids-card, .mountains {
+    margin: 200px 0;
 }
 .book:hover{
     background-color: #186AD0;
@@ -69,9 +104,12 @@ main section{
 .join{
     text-decoration: none;
     color: #396E94; 
-    border: 3px solid #FC8B0C;
+    font-family: "Lato", Helvetica, sans-serif;
+    font-size: 18px;
+    border: 5px solid #FC8B0C;
     border-radius: 100%;
     background-color: #FCC000;
+
 }
 .join:hover{
     background-color: #186AD0;
@@ -84,21 +122,34 @@ main section{
 }
 .msg{
     background-color: #396E94;
+    line-height: 1.5em;
     border-radius:25px ;
     border: 5px solid #FC8B0C;
+    padding: 35px;
     color: whitesmoke;
+    font-family: "Lato", Helvetica, sans-serif;
 }
 .msg h2{
     color: whitesmoke;
+    font-family:"Permanent Marker" ;
 }
 .msg p{
     color: white;
+    font-family: "Lato", Helvetica, sans-serif;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer{
     background-color: #396E94;
     border-radius: 25px;
     border: 5px solid #FC8B0C;
-    color: whitesmoke
+    color: whitesmoke;
+    font-family: "Lato", Helvetica, sans-serif;
+    margin-top: 200px;
+    padding: 25px 50px;
+}
+footer .social img{
+    padding-top: 15px;
 }
 footer a{
     text-decoration: none;
@@ -110,7 +161,14 @@ footer a:hover{
 }
 .home-title{
     color: whitesmoke;
+    font-family:"Permanent Marker" ;
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4{
     color: whitesmoke;
+    font-family: "Lato", Helvetica, sans-serif;
+}
+.social img{
+    padding-top: 15px;
 }
