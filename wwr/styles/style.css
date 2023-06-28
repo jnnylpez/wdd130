@@ -283,8 +283,19 @@ footer a:hover{
     max-height: 100%;
 
 }
+#river-subtitle{
+    text-decoration: underline;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
 h4{
     line-height: 5px;
+    text-decoration: underline;
+    margin-top: 60px;
+}
+#utah{
+    margin-top: 15px;
+
 }
 
 
