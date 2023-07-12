@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animal Guessing Game</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div id="nav-grid">
+            
+            <a id= "logo_link" href= "http://127.0.0.1:5500/wildpidiea/wildpidia_home.html">
+                <img class="logo" src="./images/8d22f2ed68814f7296e0474c91d61247.png" alt="Logo">
+            </a>
+        
+            <nav>
+                <a href="http://127.0.0.1:5500/wildpidiea/wildpidia_home.html" id="home-link">Home</a>
+                <a href="http://127.0.0.1:5500/wildpidiea/explore.html" id="explore-link">Explore </a>
+                <a href="http://127.0.0.1:5500/wildpidiea/games.html#" id="games-link">Games</a> 
+                <a href="http://127.0.0.1:5500/wildpidiea/wildpidia_site-plan.html" id="site-plan-link">Site Plan</a>
+
+            
+            </nav>
+
+        </div>
+        <div id="games-pic-collage">
+                
+            <img src="./images/cat-4657619_640.jpg" alt="Cat Playing" class="game-cat">
+            <img src="./images/elephant-3060526_640.jpg" alt="Elephant Playing" class="game-elephant">
+            <img src="./images/zebra-3414368_640.jpg" alt="Zebra Playing" class="game-zebra"> 
+
+        </div>
+
+    </header>
+    <div>
+        <h1 id="games-title">Come and Play!</h1>
+        <p id="games-msg"> Hey there, animal enthusiast! Did you know that  games are not only super fun but also a fantastic way to learn? Guess what? Animals love playing games too! At Wildpedia, we believe that games can be an awesome tool for helping you learn all about animals. We've created a special section on our website just for you, where you can find exciting games that. So get ready to have a blast and learn tons of cool stuff about the incredible creatures that inhabit our world.</p>
+       
+    <div id="games-content-page">
+        <div class="game-container">
+            <div><img src="./images/Image.png" alt="Cartoon Lion" class="cartoon-lion"></div>
+            <h1>Guess The Animal...</h1> 
+            <p >Im thinking of an animal can you guess which one?</p>
+            <div id="guess list">
+                <h3>Possibilities</h3>
+                <ul>
+                    <li>Lion</li>
+                    <li>Elephant</li>
+                    <li>Giraffe</li>
+                    <li>Tiger</li>
+                    <li>Monkey</li>
+                    <li>Penguin</li>
+                    <li>Dolphin</li>
+                </ul>
+            </div>
+
+            <input type="text" id="guess" placeholder="Enter your guess">
+            <button id="guessButton">Guess!</button>
+
+            <div id="clues" style="display: none;">
+                <h3>Clues:</h3>
+                <ul id="cluesList"></ul>
+            </div>
+    </div>
+
+
+    <footer>
+        <p class="copy-right">Wildpedia &copy; 2023 - Jennifer Lopez</p>
+        <p><a href="http://127.0.0.1:5500/wildpidiea/wildpidia_site-plan.html">Site Plan</a></p>
+
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook2.png" alt="fb icon">
+            </a>
+            <a  href="https://twitter.com" target="_blank">
+            <img src="./images/twitter2.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram2.png" alt="instagram icon">
+            </a>
+        </div>
+
+
+    </footer>
+    <script>
+        // Dictionary of animals and their clues
+        var animals = {
+            "lion": [
+                "It is known as the king of the jungle.",
+                "It has a majestic mane."
+            ],
+            "elephant": [
+                "It has a long trunk and large tusks.",
+                "It is the largest land animal."
+            ],
+            "giraffe": [
+                "It has a long neck and spots on its body.",
+                "It can reach the top of trees to feed."
+            ],
+            "tiger": [
+                "It is known for its orange fur with black stripes.",
+                "It is an apex predator."
+            ],
+            "monkey": [
+                "It loves to swing from trees and eat bananas.",
+                "It is highly intelligent."
+            ],
+            "penguin": [
+                "It is a flightless bird.",
+                "It lives in cold environments like Antarctica."
+            ],
+            "dolphin": [
+                "It is a highly intelligent marine mammal.",
+                "It is known for its playful behavior."
+            ]
+        };
+
+        // Select a random animal
+        function getRandomAnimal() {
+            var animalKeys = Object.keys(animals);
+            var randomIndex = Math.floor(Math.random() * animalKeys.length);
+            return animalKeys[randomIndex];
+        }
+
+        // Provide clues for the animal
+        function provideClues(animal) {
+            var clues = animals[animal];
+            var cluesList = document.getElementById("cluesList");
+            cluesList.innerHTML = "";
+
+            for (var i = 0; i < clues.length; i++) {
+                var clueItem = document.createElement("li");
+                clueItem.textContent = clues[i];
+                cluesList.appendChild(clueItem);
+            }
+        }
+
+        // Game logic
+        function playGame() {
+            var randomAnimal = getRandomAnimal();
+            var guessButton = document.getElementById("guessButton");
+            var cluesDiv = document.getElementById("clues");
+
+            guessButton.addEventListener("click", function() {
+                var guessInput = document.getElementById("guess");
+                var playerGuess = guessInput.value.toLowerCase();
+
+                if (playerGuess === randomAnimal) {
+                    alert("Congratulations! You guessed it right!");
+                    var playAgain = confirm("Do you want to play again?");
+                    if (playAgain) {
+                        randomAnimal = getRandomAnimal();
+                        guessInput.value = "";
+                        cluesDiv.style.display = "none";
+                    } else {
+                        guessButton.disabled = true;
+                    }
+                } else {
+                    alert("Oops! That's not the correct animal. Try again!");
+                    provideClues(randomAnimal);
+                    cluesDiv.style.display = "block";
+                }
+            });
+        }
+
+        // Initialize the game
+        playGame();
+    </script>
+</body>
+</html>
+

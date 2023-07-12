@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ /* Dropdown Button */
+ @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato|Rampart+One&family=Roboto:wght@700&display=swap');
+ body{
+    display: inline;
+    margin-left: 25%;
+ }
+ h2{
+    font-family: "Rampart One";
+ }
+ img{
+    width: 50%;
+    
+    
+ }
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center; /* Center the text horizontally */
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+p{
+    text-align: center;
+    font-size: 30px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+    </style>
+</head>
+<body>
+    <img src="./images/lion-3576031_640.jpg" alt="Lion" class="education-img">
+    <div class="dropdown">
+        <img src="" alt="">
+        <button onclick="myFunction()" class="dropbtn"><h2>The Majestic Kings of the Savannah</h2></button>
+        <div id="myDropdown" class="dropdown-content">
+            <p>Get ready to roar with excitement as we introduce you to the mighty lions! These incredible creatures are known as the kings of the savannah. Lions are the only big cats that live in social groups called prides, consisting of related females, their offspring, and a few males. Did you know that lionesses are the primary hunters? They work together in strategic teamwork to bring down their prey.</p>
+        </div>
+    </div>
+      <script>
+            /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
+            }
+            }
+      </script>
+    
+</body>
+</html>

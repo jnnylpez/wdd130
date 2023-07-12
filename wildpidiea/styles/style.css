@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato|Rampart+One&family=Roboto:wght@700&display=swap');
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #167385;   ;
+    --secondary-color: #023047 ;
+    --accent1-color: #dbb782;
+    --accent2-color: #229ebc;
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Rampart One";
+    --paragraph-font: Lato, Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #023047;  /* headlines on a white background */ 
+    --headline-color-on-color: white; /* headlines on a colored background */ 
+    --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #167385  ;
+    --nav-link-color: #023047;
+    --nav-background-color: #167385;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #023047;
+  }
+
+body {
+    height: 100%;
+    margin: 0 auto;
+ }
+
+header {
+    max-height: 600px;
+    background-color: rgb(19, 126, 134); 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo-container{
+    align-items: center;
+}
+.logo {
+    border-right: 1px solid #023047;
+    max-height: 100px;
+    max-width: 140px;
+}
+.logo:hover{
+    transform: scale(1.2); 
+    transition: transform 0.5s; 
+}
+#nav-grid{
+    display: grid;
+    grid-template-columns: 130px auto;
+}
+nav {
+    font-family: "IM Fell French Canon SC";
+    max-height: 100px;
+    border-bottom: 1px solid #023047;
+    display: flex;
+    align-items: center;
+    background-color: rgb(19, 126, 134);
+    color: var(--nav-link-color);
+    font-size: 23px;
+}
+#home-link, #explore-link, #games-link, #site-plan-link{
+    font-family: "IM Fell French Canon SC";
+    border-right: 1px solid #023047;
+    
+}
+nav a {
+    text-align: center;
+    text-decoration: underline;
+    color: var(--nav-link-color);
+    font-family: var(--heading-font);
+    padding: 15px;
+    margin-right: 10px;
+}
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+#home_display {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  
+}
+
+ #home_banner {
+
+    border: 5px solid burlywood;
+    
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 450px;
+ }
+ .home-grid{
+    display: grid;
+    /* grid-template-rows: 1fr 2fr 1fr ; */
+ }
+#video-alert{
+    margin-top: -40px;
+    z-index: 1;
+    color: white;
+}
+#welcom-msg{
+    text-align: center;
+    margin-top: 80px;
+}
+
+h1,h2,h3{ 
+    text-align: center;
+    font-family: "Rampart One";
+    color: var(--headline-color-on-white);
+}
+h3{
+    z-index: 1;
+  
+    
+}
+p{
+    color: var(--paragraph-color-on-white);
+    font-size: 19px ;
+    line-height: 25px;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+
+}
+ul{
+    font-size: 18px;
+    line-height: 23px;
+    margin-left: 34%;
+}
+#cluesList{ 
+    margin: 0 auto;
+}
+#pic-collage{
+    max-height: 300px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    background-color: white;
+}
+.card-img{
+    border: 10px solid burlywood;
+    width: 100%;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.cheetah-card{
+    max-width: 327px;
+    margin: 0 auto;
+    margin-top: 150px;
+    grid-column: 1;
+    width: 90%;
+}
+.penguin-card{
+    min-height: 100px;
+    max-width: 327px;
+    margin: 0 auto;
+    margin-top: -32px;
+    grid-column: 2;
+    z-index: 1; 
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+.elephant-card{
+    max-width: 327px;
+    margin: 0 auto;
+    margin-top: 150px;
+    grid-column: 3;
+    width: 90%;  
+}
+footer{
+    background-color: rgb(19, 126, 134);
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+footer .social img{
+    padding-top: 15px;
+}
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+footer a:hover{
+    color: whitesmoke;
+
+}
+.copy-right{
+    color: white;
+}
+/*explore tab*/
+#header-img-div{
+    
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+#explore-header-img{
+    display: block;
+    margin: 0 auto;
+    width:100%;
+
+   
+}
+.education-img {
+    border: 5px solid burlywood;
+    box-shadow: 5px 5px 10px #6f7364;
+    margin-top: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+          
+/*Games tab css*/
+#games-title{
+    margin-top: 50px;
+}
+#games-msg{
+    margin-bottom: 50px;
+}  
+#games-pic-collage{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.game-cat, .game-elephant, .game-zebra{
+   
+    width:100%;
+    height: 100%;
+}
+.game-cat{
+    max-height: 309.16px;
+}
+.cartoon-lion{
+    max-width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.game-container {
+    
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+input[type="text"] {
+
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#guessButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #6f7364;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+
+#guessButton:hover {
+    background-color: #219EBC;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+@media screen and (max-width: 900px) {
+    #video-alert{
+        font-size: 20px;
+
+    }
+    #msg-parents{
+        margin-top: -50px;
+    }
+
+}

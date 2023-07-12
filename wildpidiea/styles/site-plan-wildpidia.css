@@ -3,26 +3,26 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato|Rampart+One&family=Roboto:wght@700&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #219EBC;   ;
-  --secondary-color: #186AD0 ;
-  --accent1-color: #023047;
-  --accent2-color: #FCC000;
+  --primary-color: #167385;   ;
+  --secondary-color: #023047 ;
+  --accent1-color: #dbb782;
+  --accent2-color: #229ebc;
   /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon SC";
+  --heading-font: "Rampart One";
   --paragraph-font: Lato, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #219EBC;  /* headlines on a white background */ 
+  --headline-color-on-white: #023047;  /* headlines on a white background */ 
   --headline-color-on-color: white; /* headlines on a colored background */ 
   --paragraph-color-on-white: black; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #023047  ;
+  --paragraph-background-color: #167385  ;
   --nav-link-color: #023047;
-  --nav-background-color: #219EBC;
+  --nav-background-color: #167385;
   --nav-hover-link-color: white;
   --nav-hover-background-color: #023047;
 }
@@ -40,6 +40,12 @@ body {
 img {
   display: block;
   margin: 0 auto;
+}
+#videos_for_homepage{
+  max-width: fit-content;
+  max-height: min-content;
+  margin:0 auto;
+  padding: 0;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
