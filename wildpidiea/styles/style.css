@@ -208,7 +208,7 @@ footer a:hover{
 #explore-header-img{
     display: block;
     margin: 0 auto;
-    width:100%;
+    
 
    
 }
@@ -299,5 +299,19 @@ input[type="text"] {
     #msg-parents{
         margin-top: -50px;
     }
+    #explore-header-img{
+        max-width: 600px;
+    }
+
+}
+
+@media screen and (max-width: 549px) {
+    nav{
+        font-size: 17px;
+    }
+    #explore-header-img{
+        max-width: 350px;
+    }
+    
 
 }
