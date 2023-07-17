@@ -84,13 +84,12 @@ nav a:hover {
 }
 
  #home_banner {
-
     border: 5px solid burlywood;
-    
+    z-index: -1px;
     width: 100%;
     height: auto;
     object-fit: cover;
-    max-height: 450px;
+    
  }
  .home-grid{
     display: grid;
